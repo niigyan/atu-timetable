@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: #000; */
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+}
+
+
+body{
+    background-color: #f6f7fb;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+.sidebar{
+    padding-top: 5px;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: #fff;
+}
+
+.sidebar-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    height: 90px;
+}
+
+.sidebar-brand .brand{
+    
+    font-size: 2.7rem;
+    color: #ecec17;
+}
+
+.sidebar-brand .label{
+    margin-top: -5px;
+    font-size: .8rem;
+    color: #00008b;
+}
+
+.sidebar-menu{
+    margin-top: 30px;
+    padding:  0 5px;
+}
+
+.sidebar-menu ul{
+    padding: 0 !important;
+}
+
+.sidebar-menu ul li{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 13px ;
+    height: 40px;
+    align-items: center;
+    transition: .2s ease-out;
+    
+    /* color: #74b9ff; */
+}
+.sidebar-menu ul li a{
+    color: #696969;
+}
+
+.sidebar-menu ul li.active{
+     border-left: 4px solid #1e90ff; 
+     border-radius: 4px;
+     background: #f6f7fb;
+     box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.244);
+}
+
+.sidebar-menu ul li.active a{
+    color: #1e90ff;
+}
+
+.sidebar-menu ul li:hover a{
+    color: #1e90ff;
+}
+
+.sidebar-menu ul li:hover{
+    border-left: 4px solid #1e90ff; 
+    border-radius: 4px;
+    background: #f6f7fb;
+}
+
+.sidebar .sidebar-menu ul li a .svg-inline--fa{
+    font-size: 1rem !important;
+}
+.sidebar-menu ul li a span{
+    margin-left: 6px;
+}
+ main {
+    position: relative;
+    left: 250px;
+    height: 100%;
+    width: calc(100% - 250px);
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: calc(100% - 250px);
+    align-items: center;
+    border-bottom: 2px solid #999;
+    padding: 2px 15px;
+    background: #f6f7fb;
+    z-index: 1;
+}
+
+.header .icon-bar .svg-inline--fa{
+    color: #696969;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+.header .profile{
+    display: flex;
+    gap: 12px;
+}
+
+main .main-content{
+    position: relative;
+    top: 90px;
+    max-height: calc(100% - 90px);
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 20px;
+}

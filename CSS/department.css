@@ -1,0 +1,31 @@
+
+
+.display{
+    background: #fff;
+}
+
+.main-content .menu-title{
+    margin-bottom: 35px;
+}
+.main-content .menu-title h3{
+    font-size: 2rem;
+    color: #000;
+} 
+
+.main-content .table-container{
+    /* position: relative; */
+    width: 96%;
+    border: 1px solid #999;
+    padding: 20px 25px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.main-content .table-container .addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 2px solid #999;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,73 @@
+
+main .main-content {
+    padding-bottom: 700px;
+}
+
+.menu-title .form-container .mb-3{
+        display: flex;
+        width: 280px;
+        align-items: center;
+        /* background-color: blue; */
+        justify-content: space-between;
+}
+
+.menu-title .form-container  .button{
+    justify-content: space-around !important;
+}
+
+.menu-title .form-container .mb-3 input, .menu-title .form-container .mb-3 select{
+       width: 200px;
+}
+
+.main-content .table-container .addBtn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: none !important;
+    margin-bottom: 20px;
+    padding-bottom: 0px !important;
+}
+.table-container .table-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    transition: .5s ease;
+}
+
+.table-container .table-title .head{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.table-container .table-title .sem{
+    font-size: 1.4rem;
+}
+
+#message tr td{
+    transition: .5s ease;
+}
+
+#message .gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message tr td .loading-gif {
+    width: 40px;
+    background: transparent;
+    transition: .4s ease-out;
+    animation: rotate .8s linear  infinite ;
+    transform-origin: center;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

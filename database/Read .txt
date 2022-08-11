@@ -1,0 +1,2 @@
+1. Create add databse with the name "timetable"
+2.import the database file with the name "timetable.sql"

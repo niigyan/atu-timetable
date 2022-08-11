@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: #000; */
+    font-family: 'Poppins', sans-seri;
+}
+
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.login-container{
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 500px;
+    border-radius: .4rem;
+    overflow: hidden;
+}
+.login-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-head .welcome{
+    width: 100%;
+    display: flex;
+    background: red;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.login-head .label-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 150px; 	
+    /* background: orange; */
+    padding-top: 35px;
+}
+
+.login-head .label-img .img{
+    font-size: 1.7rem;
+    color: #696969;
+}
+
+.login-head .label-img .label{
+    font-size: 2.5rem;
+    color: #000;
+    margin-top: -10px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    padding: 0 35px;
+    flex-direction: column;
+}
+form .input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+form .input label {
+    color: #696969;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .3s ease-in;
+    /* position: absolute; 
+    bottom: 0;   */
+}
+
+form .input input{
+    height: 35px;
+    color: #1d1c1c;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #999;
+    transition: border .5s ease;
+}
+
+form .input input:focus{
+    border-color: red;
+    animation: Animate  .5s ease-out;
+}
+
+@keyframes animate {
+  0%{
+    border-color: #999;
+  }
+  100%{
+    border-color: red;
+  }
+  }
+
+form .login-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+form #login {
+    width: 200px;
+    height: 50px;
+    padding: 10px 50px;
+    border-radius: 30px;
+    align-items: center;
+    border: none;
+    color: #fff;
+    font-size: 1.09rem;
+    background: red;
+    cursor: pointer;
+    transform-origin: center;
+    transition: all .4s ease;
+}
+
+form #login:active{
+    transform: scale(0.9);
+}
